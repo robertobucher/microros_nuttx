@@ -1,0 +1,3 @@
+mkfile_path := $(abspath $(lastword $(MAKEFILE_LIST)))
+MICROROS_TOP_FOLDER := $(notdir $(patsubst %/,%,$(dir $(mkfile_path))))
+include $(wildcard $(APPDIR)/$(MICROROS_TOP_FOLDER)/*/Make.defs)

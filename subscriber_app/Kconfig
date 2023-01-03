@@ -1,0 +1,6 @@
+config MICROROS_SUBSCRIBER
+  bool "micro-ROS subscriber app"
+  default n
+  depends on MICROROSLIB
+  ---help---
+    Enable the micro-ROS subscriber app

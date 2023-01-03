@@ -1,0 +1,14 @@
+version: '3'
+services:
+  microros:
+    container_name: microros
+    image: robertobucher/microros:nuttx
+    volumes:
+    - /dev:/dev
+    - $XAUTHORITY:/tmp/.XAuthority
+    environment:
+    - DISPLAY
+    - XAUTHORITY=/tmp/.XAuthority
+    network_mode: host
+    restart: always
+    privileged: true
