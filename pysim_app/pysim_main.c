@@ -23,10 +23,10 @@ double microros_input[4];
 double microros_output[4];
 
 /* Default values */
-char * nodeName = "nuttx_node";
-char * subs = "nuttx_subscriber";
-char * pub = "nuttx_publisher";
-double pubTime = 1.0;
+static char * nodeName = "nuttx_node";
+static char * subs = "nuttx_subscriber";
+static char * pub = "nuttx_publisher";
+static double pubTime = 1.0;
 
 static void subscription_callback(const void * msgin)
 {
